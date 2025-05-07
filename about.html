@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+        background: linear-gradient(to bottom, #800000 40%, #FFA500 100%);
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    .top-left-image {
+        position: absolute;
+        top: 50%;
+        left: -25vw;
+        transform: translateY(-50%);
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+        object-fit: cover;
+        opacity: 0.7;
+        clip-path: inset(0 0 0 50%);
+        z-index: -1;
+    }
+
+    table {
+        background-color: transparent;
+        width: 50%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    table th {
+        text-align: center;
+    }
+
+    table th a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    table th a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 70px 40px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .map-section {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .map-details {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 10px 0;
+    }
+
+    .content-right {
+        width: 50%;
+        font-size: 1.1em;
+        line-height: 1.6em;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .content-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .map-section,
+        .content-right {
+            width: 90%;
+        }
+
+        .map-container {
+            height: 300px;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <table>
+                <th><a href="home.html">Home</a></th>
+                <th><a href="courses.html">Courses</a></th>
+                <th><a href="gallery.html">Gallery</a></th>
+                <th><a href="about.html">About</a></th>
+
+   </table>
+  </center>
+
+  <div class="content-container">
+    
+    <div class="map-section">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.349057118315!2d121.17171857486002!3d13.962839386451364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd6b7f73fd9e49%3A0x1d27358b4b6562c!2sKolehiyo%20ng%20Lungsod%20ng%20Lipa!5e1!3m2!1sen!2sph!4v1746577719942!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+  
+        </iframe>
+      </div>
+      <div class="map-details">
+        <p><strong>Address:</strong> Marawoy, Lipa City, Batangas</p>
+        <p><strong>Contact Info:</strong> (043) 774 2420</p>
+      </div>
+    </div>
+
+        <div class="content-right">
+      <p>The Lipa City government, led by former Mayor Ruben L. Umali, envisioned a government school to cater to the poor but deserving students. The SIPAG LAKAS movement helped establish Lipa City Public College, which consists of a science high school, a general high school, and a technical-vocational school. The Science High School offered post-secondary courses, which were later renamed Lipa City Science and Technology Institute.</p>
+
+      <p>In 1991, Congressman Ralph Recto requested the conversion of Lipa City Integrated School into a state college. Mayor Umali felt that poor students who could not afford high tuition fees in private tertiary schools needed a government-run college. In 1994, a project proposal for a community college was submitted to the Sannguniang Panglungsod of Lipa City, leading to the establishment of Lipa City Public Colleges.</p>
+
+      <p>In 1998, Special Ordinance No. 13-98 was approved, prescribing rules and regulations for the college's operation. Php 1,700,000.00 was appropriated for the initial operation, and CHED approved the college permits for the 1994-1995 first semester.</p>
+
+      <p>In 2002, Lipa City Public College has grown significantly, now serving 3,969 students from Lipa City and nearby towns and cities. The college's campus was relocated in 2009 and renamed "KOLEHIYO NG LUNGSOD NG LIPA." Under newly-elected Mayor Meynard A. Sabili, the college serves over 5,000 students, demonstrating the local government's concern for free college education.</p>
+    </div>
+  </div>
+</body>
+</html>
